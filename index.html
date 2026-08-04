@@ -167,6 +167,17 @@
   .engage h3{ font-family:'Space Grotesk', sans-serif; font-size:17px; margin-bottom:8px; }
   .engage p{ color:var(--muted); font-size:14.5px; max-width:60ch; }
 
+  /* Expérience */
+  .exp-card{ border:1px solid var(--line); border-radius:6px; padding:26px; }
+  .exp-top{ display:flex; justify-content:space-between; gap:10px; margin-bottom:6px; flex-wrap:wrap; }
+  .exp-title{ font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:17px; }
+  .exp-tag{ font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--accent); white-space:nowrap; }
+  .exp-place{ color:var(--muted); font-size:13.5px; margin-bottom:14px; }
+  .exp-desc{ color:var(--muted); font-size:14px; max-width:65ch; margin-bottom:20px; }
+  .exp-gallery{ display:grid; gap:12px; grid-template-columns:1fr; }
+  @media(min-width:700px){ .exp-gallery{ grid-template-columns:repeat(3,1fr); } }
+  .exp-gallery img{ width:100%; height:220px; object-fit:cover; border-radius:6px; border:1px solid var(--line); display:block; }
+
   /* Langues */
   .lang-list{ display:grid; gap:16px; max-width:480px; }
   .lang-row{ display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--line); padding-bottom:12px; }
@@ -382,10 +393,31 @@
     </div>
   </section>
 
+  <!-- EXPERIENCE -->
+  <section class="block" id="experience">
+    <div class="sec-head">
+      <div class="sec-num mono">04</div>
+      <h2 class="sec-title">Expérience</h2>
+    </div>
+    <div class="exp-card">
+      <div class="exp-top">
+        <div class="exp-title">Vendeur &amp; Serveur polyvalent</div>
+        <div class="exp-tag mono">Depuis mars 2025</div>
+      </div>
+      <div class="exp-place">Épicerie &amp; Restauration italienne — Marché des Beaux-Arts, Besançon</div>
+      <p class="exp-desc">Service en salle et prise de commandes, découpe de charcuterie et de fromages au rayon traiteur, préparation de boissons (barista) et confection de planches apéritives, accueil et conseil client, tenue de caisse.</p>
+      <div class="exp-gallery">
+        <img src="experience/equipe.jpg" alt="Avec mes collègues à l'épicerie">
+        <img src="experience/comptoir.jpg" alt="Comptoir traiteur de l'épicerie">
+        <img src="experience/planche.jpg" alt="Planche apéritive préparée pour un client">
+      </div>
+    </div>
+  </section>
+
   <!-- LANGUES -->
   <section class="block" id="langues">
     <div class="sec-head">
-      <div class="sec-num mono">04</div>
+      <div class="sec-num mono">05</div>
       <h2 class="sec-title">Langues</h2>
     </div>
     <div class="lang-list">
@@ -399,7 +431,7 @@
   <!-- FORMATION -->
   <section class="block" id="formation">
     <div class="sec-head">
-      <div class="sec-num mono">05</div>
+      <div class="sec-num mono">06</div>
       <h2 class="sec-title">Formation</h2>
       <p class="sec-sub">Campus de la Bouloie, UFR Sciences et Techniques — Besançon.</p>
     </div>
@@ -437,7 +469,7 @@
   <!-- CONTACT -->
   <section class="block" id="contact">
     <div class="sec-head">
-      <div class="sec-num mono">06</div>
+      <div class="sec-num mono">07</div>
       <h2 class="sec-title">Contact</h2>
     </div>
     <div class="contact-grid">
